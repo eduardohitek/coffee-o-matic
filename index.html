@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+	Typify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Coffee-o-Matic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8
+      ]><script src="assets/js/ie/html5shiv.js"></script
+    ><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9
+      ]><link rel="stylesheet" href="assets/css/ie9.css"
+    /><![endif]-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      getData();
+    </script>
+  </head>
+  <body>
+    <!-- Banner -->
+    <form name="myForm">
+      <section id="banner">
+        <h1>
+          <img src="images/coffee.png" />
+          <p>
+            <br /><br /><strong>Coffee-o-matic</strong><br /><br />Um gerador de
+            opinião
+          </p>
+        </h1>
+        <h2 id="review"></h2>
+        <input type="hidden" id="myReview" value="" />
+        <ul class="actions">
+          <li>
+            <a class="button special" onclick="getData()">Nova opinião</a>
+          </li>
+          <li>
+            <a
+              class="button special"
+              onclick="copyText(document.myForm.myReview)"
+              >Control-C</a
+            >
+          </li>
+        </ul>
+        <h1><p>mostre sapiência</p></h1>
+      </section>
+    </form>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="copyright">
+        &copy; Sarcasmo Inc. - Design:
+        <a href="http://templated.co/">TEMPLATED</a>.<br />
+        Owner: <a href="mailto:harrisson@gmail.com">@HarrissonAzevedo</a> <br />
+        Developer: <a href="mailto:eduardohitek@gmail.com">@eduardohitek</a>
+      </div>
+      <div style="text-align: center;">
+        1.0.0
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+  </body>
+</html>
